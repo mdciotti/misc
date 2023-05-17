@@ -1,0 +1,32 @@
+{
+	"siteID": "48_231_1006",
+	"timeStamp": 20170601043000,
+	"param": 42602, //measurement
+	"poc": 1,
+	"method": 99,
+	"units": 8,
+	"value": 4.68705,
+	"flag": "VAL",
+	"verified": "N",
+	"slope": 1913.07,
+	"intercept": 0.0333333,
+	"sample": 1
+}
+
+
+{
+	"_id": "48_231_1006_20170601043000",
+	"epoch": 20170601043000,
+	"site": "48_231_1006",
+	"measurements": [
+		{
+			"param": 42602,
+			"value": 4.68705,
+			"flag": "VAL",
+			// everything else
+		},
+		{
+			// another kind of measurement for this site
+		}
+	]
+}

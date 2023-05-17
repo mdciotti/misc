@@ -1,0 +1,192 @@
+# https://en.wikipedia.org/wiki/Timeline_of_Solar_System_exploration#Planned_or_scheduled
+# http://i.imgur.com/lYdRVRi.png
+# https://www.reddit.com/r/space/comments/720wn0/what_are_the_big_space_projects_in_the_next_20/
+
+types: [rover, probe, orbiter]
+
+- title: LunarX
+  mission: unknown
+  date: early 2018
+  agency: unknown
+  type: exploration
+  tags: [private]
+  type: Rover
+  destination: Mars
+  description: |
+    Four private robotic rovers from around the world land on the Moon, each
+    broadcasting live HD footage, competing for the Google LunarX $20 million
+    cash prize.
+
+- title: China lunar sample return mission
+  mission: unknown
+  date: 2018
+  agency: China
+  type: exploration
+  tags: [sample]
+  destination: Luna
+  description: |
+    Will return samples from the Moon for the first time since the 1970s.
+
+- title: Osiris Rex arrives at Bennu
+  mission: Osiris Rex
+  date: August 2018
+  agency: NASA
+  type: exploration
+  tags: [asteroid, sample]
+  destination: Bennu
+  description: |
+    NASA's Osiris Rex will arrive at asteroid Bennu (never before seen),
+    collect a sample, and return to Earth. 
+
+- title: Hayabusa 2 arrives at Ryugu
+  mission: Hayabusa 2
+  date: August 2018
+  agency: JAXA
+  type: exploration
+  tags: [asteroid, sample]
+  destination: Ryugu
+  description: |
+    JAXA's Hayabusa 2 will arrive at asteroid Ryugu (never before seen), deploy
+    three mini hopping landers, and bomb its asteroid before collecting its
+    sample and returning to Earth.
+
+- title: China lunar far side rover launches
+  mission: unknown
+  date: 2018
+  agency: China
+  type: exploration
+  tags: []
+  destination: Luna
+  description: |
+    No probe has ever landed on the far side of the Moon before.
+
+- title: Parker Solar Probe launches
+  mission: Parker Solar Probe
+  date: 2018
+  agency: NASA
+  type: exploration
+  tags: []
+  destination: Sol
+  description: |
+    NASA's Parker Solar Probe launches, which will be the first mission to ever
+    fly through & sample the atmosphere of the sun.
+
+- title: BepiColombo launches
+  mission: BepiColombo
+  date: 2018
+  agency: [ESA, JAXA]
+  type: exploration
+  tags: []
+  destination: Mercury
+  description: |
+    BepiColombo, consisting of two Mercury orbiters--one European, one Japanese
+    --will work in unison to study and image Mercury as never before.
+
+- title: James Webb Space Telescope launches
+  mission: James Webb Space Telescope
+  date: 2018
+  agency: NASA
+  type: telescope
+  destination: Earth
+  description: |
+    An $8 billion dollar giant infrared telescope that promises to
+    revolutionize astronomy.
+
+- title: New Horizons flyby of 2014 MU69
+  mission: New Horizons
+  date: 1 Jan 2019
+  agency: NASA
+  tags: []
+  type: exploration
+  destination: 2014 MU69
+  description: |
+    New Horizons does a close flyby of kuiper belt object 2014 MU69 (never
+    before seen). MU69 is a small icy world at the very extremity of the solar
+    system, and is believed to be a frozen relic of the birth of the solar
+    system; a type of world never before visited by a spacecraft.
+
+- title: Mars 2020 Rover launches
+  mission: unknown
+  date: 2020
+  agency: NASA
+  type: exploration
+  destination: Mars
+  description:
+
+- title: ExoMars Rover launches
+  mission: ExoMars Rover
+  date: 2020
+  agency: ESA
+  type: exploration
+  destination: Mars
+
+- title: China Mars Rover launches
+  mission: unknown
+  date: 2020
+  agency: China
+  type: exploration
+  destination: Mars
+
+- title: India Mars Orbiter launches
+  mission: unknown
+  date: 2020
+  agency: India
+  type: exploration
+  destination: Mars
+
+- title: UAE Mars Orbiter launches
+  mission: unknown
+  date: 2020
+  agency: UAE
+  type: exploration
+  destination: Mars
+
+- title: Lucy launches
+  mission: Lucy
+  date: 2021
+  agency: NASA
+  type: exploration
+  destination: Trojans
+  description: |
+    NASA's Lucy launches, on a journey that will take it to the Trojans, a
+    never-before-visited class of small worlds trapped in Jupiter's orbit.
+    Lucy's unique trajectory takes it past 6 Trojans over 8 years, one of which
+    is a binary.
+
+- title: Europa Clipper launches
+  mission: Europa Clipper
+  date: 2022
+  agency: NASA
+  type: exploration
+  destination: Europa
+  description: |
+    NASA's Europa Clipper launches, which will investigate the habitability of
+    Jupiter's moon Europa, using ice-penetrating radar to probe the ocean and
+    cameras to map the surface at very high resolution, among other things.
+    Will search for a landing site for a future, separate Europa Lander mission.
+
+- title: JUICE launches
+  mission: JUICE
+  date: 2022
+  agency: ESA
+  type: exploration
+  destination: [Callisto, Ganymede]
+  description: |
+    ESA's JUICE launches, which is basically a Europa Clipper but for Jupiter's
+    moons Callisto and Ganymede, both of which are suspected to have internal
+    oceans. Will eventually end up orbiting Ganymede and will study the largest
+    moon in the solar system in thorough detail.
+
+- title: Psyche launches
+  mission: Psyche
+  date: 2022
+  agency: NASA
+  tags: [asteroid]
+  type: exploration
+  destination: Psyche
+  description: |
+    NASA's Psyche launches, on a mission to orbit the asteroid Psyche (never
+    before seen), the only (large) asteroid that's, apparently, made of pure
+    metal. Psyche is believed to be the exposed core of a destroyed
+    proto-planet, which would make it extremely scientifically valuable as we
+    can never directly investigate the core of our Earth.

@@ -1,0 +1,2275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Tab for a Cause</title>
+    <meta name="keywords" content="tab for a cause, nonprofit, online nonprofit, charity, online charity, advertising charity, tab, cause, giving" />
+    <meta name="description" content="Tab for a Cause is a charitable organization that donates advertising revenue to causes around the world. Giving to your cause is as easy as surfing the web." />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/png" href="https://tabforacause-west.s3.amazonaws.com/static-1/img/logo_favicon.9b271c59ce24.png" />
+    <!-- Begin Doubleclick. -->
+    <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+    </script>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/43865596/leaderboard-1', [728, 90], 'div-gpt-ad-1418693888757-0').addService(googletag.pubads());
+        googletag.defineSlot('/43865596/rectangle-1', [300, 250], 'div-gpt-ad-1418693888757-1').addService(googletag.pubads());
+        googletag.enableServices();
+    });
+    </script>
+    <!-- End Doubleclick. -->
+    <link href="https://tabforacause-west.s3.amazonaws.com/static-1/css/newtab3.78ce75044acc.gz.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id='preloaded-background-image' class='preloaded full-page-background'></div>
+    <div id='background-fade-in' class='background-fade-in'></div>
+    <div id="react-page"></div>
+    <div id='rectangle-ad-wrapper' class='shadow'>
+        <div class='ad-description rectangle-ad'>
+            The ad in this space will help raise money for your favorite cause.</div>
+        <div id='div-gpt-ad-1418693888757-1' style='width:300px;height:250px;position:absolute;top:0'></div>
+    </div>
+    <div id='leaderboard'>
+        <div class='ad-description leaderboard-ad'>
+            The ad in this space will help raise money for your favorite cause.</div>
+        <div id='div-gpt-ad-1418693888757-0' style='width:728px;height:90px;position:absolute;top:0;'></div>
+    </div>
+    <script>
+    // Disable console
+    window.console = {
+        log: function() {},
+        info: function() {},
+        error: function() {},
+        warn: function() {},
+        debug: function() {}
+    };
+
+
+    (function(newtab, undefined) {
+        // Ad code
+        newtab.executeAdCode = function() {
+            if (googletag && googletag.cmd) {
+                // From Doubleclick.
+                googletag.cmd.push(function() {
+                    googletag.display('div-gpt-ad-1418693888757-0');
+                });
+                googletag.cmd.push(function() {
+                    googletag.display('div-gpt-ad-1418693888757-1');
+                });
+            }
+        }
+        newtab.executeAdCode();
+
+        newtab.fadeInPage = function() {
+            var backgroundFadeInElem = document.getElementById('background-fade-in');
+            backgroundFadeInElem.style.opacity = 0;
+            // Mark that we've faded in so we know to not do it
+            // again when React mounts.
+            newtab.alreadyFadedInPage = true;
+        }
+
+        newtab.useLocalStore = false;
+        newtab.imagePaths = {
+            "zeroClipboard": "https://tabforacause-west.s3.amazonaws.com/media/zero-clipboard/ZeroClipboard.swf",
+            "grippy": "https://tabforacause-west.s3.amazonaws.com/static-1/img/grippy2.92a326f2a0ee.png"
+        };
+        newtab.allStoreData = {
+            "CampaignInfoStore": {
+                "storeData": {
+                    "start_datetime": 1427483145000,
+                    "name": "March Gladness, Elite 8",
+                    "title": "March Gladness Elite 8:",
+                    "installs": 0,
+                    "rival": {
+                        "impact": {
+                            "units": "people",
+                            "help_text": "with clean water for one year",
+                            "value": 7
+                        },
+                        "vc": 21114,
+                        "name": "Stanford University",
+                        "secondary_color": "#FFFFFF",
+                        "primary_color": "#CB1A22",
+                        "id": 3
+                    },
+                    "goal": 2500,
+                    "active_toggle_timestamp": 1427483619000,
+                    "is_active": true,
+                    "loyalty": {
+                        "impact": {
+                            "units": "people",
+                            "help_text": "with clean water for one year",
+                            "value": 12
+                        },
+                        "vc": 21376,
+                        "name": "University of Houston",
+                        "secondary_color": "#E51837",
+                        "member_name": "Cougars",
+                        "primary_color": "#002A5C",
+                        "id": 66
+                    },
+                    "end_description": "March Gladness Elite 8:",
+                    "campaign_template": "head2head_group_rivalry_with_countdown",
+                    "social_share_call": "Tell your friends to start Tabbing:",
+                    "image_url": "plain_color_background:rgb(230, 230, 250)",
+                    "end_datetime": 1427828400000,
+                    "end_title": "March Gladness Elite 8:",
+                    "end_social_media_cta": "",
+                    "social_share_desc": "Let's win this tournament for charity! #MarchGladness",
+                    "end_campaign_template": "head2head_group_rivalry",
+                    "id": 18,
+                    "is_group_specific": true,
+                    "description": "March Gladness Elite 8:"
+                }
+            },
+            "UserDataStore": {
+                "storeData": {
+                    "tab": {
+                        "tabs_all_time": 58,
+                        "time_of_last_tab": 1427557101074,
+                        "vc_current": 58,
+                        "tabs_today": 3,
+                        "vc_for_next_level": 3,
+                        "vc_total": 58,
+                        "vc_today": 3
+                    },
+                    "has_dismissed_announcement": false,
+                    "level_announcement": null,
+                    "vc_donation": {
+                        "pending_donations": [],
+                        "colors": {
+                            "Human Rights": "#cc080e",
+                            "Water": "#1F5184",
+                            "Education": "#56330F",
+                            "Health": "#EB7F13",
+                            "The Environment": "#006905"
+                        },
+                        "modified_at": 1427242184000,
+                        "donation_history": {
+                            "Human Rights": 0,
+                            "Water": 0,
+                            "Education": 0,
+                            "Health": 0,
+                            "The Environment": 0
+                        }
+                    },
+                    "share_links": {
+                        "generic": {
+                            "url": "http://www.tabforacause.org/?r=11190997",
+                            "type": "generic"
+                        },
+                        "user_impact": {
+                            "url": "http://www.tabforacause.org/?r=11190997&context=Kxt7h1AW-tNE9SWhVsa7XrHqv1E…adbQ3lIwVyHZBI8DSdJNPx6VLDHQP1mrhcCzCmPUdIB2MOFwphcJU6A8byn6oz0Zfv3qLulpbw",
+                            "type": "user-impact"
+                        },
+                        "user_level": {
+                            "url": "http://www.tabforacause.org/?r=11190997&context=Kxt7h1AW-tOanZI2picSXzIuZ8MZEEA1TKIN1_VK91GLl4ByXMHh0Qk6Y8MirkaK",
+                            "type": "user-level"
+                        },
+                        "campaign": {
+                            "url": "http://www.tabforacause.org/?c=18&r=11190997&context=Kxt7h1AW-tMTAEgG4TDtHT…Io3vjRo0LsqOKYH_O_eYXdepccGEpT9tkV8B889y-c2j_yQ-k1yUb6YUWM0Krq-rSPZO5&g=66",
+                            "type": "campaign"
+                        }
+                    },
+                    "tabbers_recruited": 0,
+                    "last_visited_pane": -1,
+                    "announcement": {
+                        "text": "",
+                        "id": 0,
+                        "dismissable": false
+                    },
+                    "user_id": 11190997,
+                    "preferences": {
+                        "last_vc_donation_time": 1427242184000,
+                        "theme": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/311e80fc2d594c7ebf7aaedfd274a3d9.jpg",
+                        "last_viewed_pane": -1,
+                        "modified_time": 1427496250000,
+                        "background": "theme"
+                    },
+                    "level": {
+                        "vc_until_next_level": 22,
+                        "just_leveled_up": false,
+                        "percent_to_next_level": 12,
+                        "level": 6
+                    },
+                    "has_adblock_enabled": false,
+                    "modified_at": 1427496250000,
+                    "is_logged_in": true,
+                    "user_name": "mdciotti"
+                }
+            },
+            "WidgetComponentStore": {
+                "storeData": {
+                    "widget_protos": [{
+                        "widget_type_id": "26a72807b8124f34b17dcf03250b9fa4",
+                        "display_name": "Bookmark",
+                        "name": "Bookmark",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 1,
+                        "width": 1,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "empty bookmark",
+                        "order": 2
+                    }, {
+                        "widget_type_id": "d84447e23fee40b98982241513e3005b",
+                        "display_name": "Sticky Note",
+                        "name": "Sticky Note",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 2,
+                        "width": 2,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "pencil",
+                        "order": 3
+                    }, {
+                        "widget_type_id": "ec1573d933484306aa20f0b8de882e1c",
+                        "display_name": "Twitter",
+                        "name": "Twitter",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 4,
+                        "width": 3,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "twitter",
+                        "order": 6
+                    }, {
+                        "widget_type_id": "bfcfa7b8130f4321812c34d0a6a80f3b",
+                        "display_name": "Charity News",
+                        "name": "Rss Feed",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 4,
+                        "width": 3,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "rss",
+                        "order": 7
+                    }, {
+                        "widget_type_id": "761ed959da924ffeb84d17f951b4c3fc",
+                        "display_name": "Search",
+                        "name": "Search",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 1,
+                        "width": 3,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "search",
+                        "order": 8
+                    }, {
+                        "widget_type_id": "7a11a8fbe5a84154b61a6ec8edc2a7b0",
+                        "display_name": "Charity Photos",
+                        "name": "Charity Photos",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 4,
+                        "width": 5,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "photo",
+                        "order": 9
+                    }, {
+                        "widget_type_id": "5d5a8864ad444892acfaa172de4bae8c",
+                        "display_name": "Clock",
+                        "name": "Clock",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 1,
+                        "width": 2,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "time",
+                        "order": 10
+                    }, {
+                        "widget_type_id": "b5d10081079d4f0e85a46b25468c3cac",
+                        "display_name": "Google Calendar",
+                        "name": "GoogleCalendar",
+                        "resizable": true,
+                        "image_icon": "",
+                        "height": 4,
+                        "width": 3,
+                        "permanent": false,
+                        "deletable": true,
+                        "movable_between_panes": true,
+                        "semantic_ui_icon": "calendar",
+                        "order": 11
+                    }],
+                    "widget_scripts": {
+                        "26a72807b8124f34b17dcf03250b9fa4": "/** @jsx React.DOM */\nReact.createClass({\n    mixins: [WidgetMixin],\n    returnWidgetSettings: function() {\n        var settings = {\n            'name': {\n                'default': 'Google',\n                'settings': {\n                  'display_text': 'Name',\n                  'type': 'input'\n                },\n            },\n            'url': {\n                'default': 'https://google.com',\n                'settings': {\n                  'display_text': 'URL',\n                  'type': 'url-input'\n                },\n            },\n            'color': {\n                'default': '#9C87BE',\n                'settings': {\n                  'display_text': 'Background color',\n                  'type': 'color'\n                },\n            },\n            'textColor': {\n                'default': '#2B2B2B',\n                'settings': {\n                  'display_text': 'Text color',\n                  'type': 'color'\n                },\n            }\n        };\n        return settings;\n    },\n    redirect: function() {\n        var url = this.data['url'];\n        this.props.redirect(url);\n    },\n    render: function() {\n        var bookmarkName = this.data.name;\n\n        // Background styling.\n        var boxStyle = {\n            backgroundColor: this.data['color']\n        }\n\n        // Text styling.\n        var titleFontSize = 13 + (this.props.width * 6) - (bookmarkName.length * 0.5)\n        var displayTextStyle = {\n            color: this.data['textColor'],\n            fontSize: titleFontSize\n        }\n        return (\n            React.createElement(\"div\", {\n                className: \"c26a72807b8124f34b17dcf03250b9fa4-colored-box\", \n                style: boxStyle, \n                onClick: this.redirect}, \n                React.createElement(\"div\", {className: \"c26a72807b8124f34b17dcf03250b9fa4-display-text-wrapper\"}, \n                    React.createElement(\"div\", {className: \"c26a72807b8124f34b17dcf03250b9fa4-display-text\", style: displayTextStyle}, \n                        bookmarkName\n                    )\n               )\n            )\n        );\n    }\n});",
+                        "bfcfa7b8130f4321812c34d0a6a80f3b": "/** @jsx React.DOM */\n(function() {\n    var Main = React.createClass({displayName: 'Main',\n        mixins: [WidgetMixin],\n        returnWidgetSettings: function() {\n            var activeCharities = [];\n            var charities = this.props.charities;\n            if (charities) {\n                charities.forEach(function(charity) {\n                    if(charity.has_active_rss_feed) {\n                        activeCharities.push({\n                            'name': charity.name,\n                            'value': charity.rss_feed_url,\n                        });\n                    }\n                });\n            }\n            var settings = {\n                'feedurl': {\n                    'default': 'http://fulltextrssfeed.com/www.water.org/content/headlines/feed/',\n                    'settings': {\n                        'display_text': 'RSS feed URL',\n                        'type': 'input-radio',\n                        'options': activeCharities,\n                    },\n                }\n            };\n            return settings;\n        },\n        getInitialState: function() {\n            return {\n                feedItems: [],\n                feedurl: '',\n                feeds: null,\n            };\n        },\n        componentDidMount: function() {\n            this.tryToLoadFeed();\n            $(\".perfectscrollbar\").perfectScrollbar({\n                suppressScrollX: true,\n                scrollYMarginOffset: 10,\n            });\n        },\n        componentDidUpdate: function() {\n            if (this.data['feedurl'] != this.state.feedurl &&\n                this.isGoogleFeedAvailable()) {\n                this.loadNewsFeed();\n            }\n        },\n        loadNewsFeed: function() {\n            var feedurl = this.data['feedurl'];\n            var feedItems = [];\n            if (!feedurl) {\n                feedurl = this.returnWidgetSettings().feedurl.default;\n            }\n            var thisObj = this;\n\n            var feed = new google.feeds.Feed(feedurl);\n            feed.load(function (result) {\n                if (!result.error) {\n                    for (var i = 0; i < result.feed.entries.length; i++) {\n                        var entry = result.feed.entries[i];\n                        var date = new Date(entry.publishedDate);\n                        var datestring = date.toLocaleDateString();\n                        feedItems.push({\n                            key: i,\n                            entry: entry,\n                            datestring: datestring\n                        });\n                    }\n                } else {\n                    console.log(result.error);\n                    var entry = {\n                        title: 'Error',\n                        contentSnippet: result.error.message\n                    };\n                    feedItems.push({\n                        key: i,\n                        entry: entry,\n                        datestring: ''\n                    });\n                }\n                thisObj.setState({\n                    feedItems: feedItems,\n                    feedurl: feedurl,\n                });\n            });\n        },\n        isGoogleFeedAvailable: function() {\n            return (google && google.feeds && google.feeds.Feed);\n        },\n        tryToLoadFeed: function() {\n            if (this.isGoogleFeedAvailable()) {\n                this.loadNewsFeed();\n            }\n            else {\n                var thisObj = this;\n                setTimeout(function() {\n                    thisObj.tryToLoadFeed();\n                }, 200);\n            }\n        },\n        render: function() {\n            var feeds = google.feeds ? google.feeds : null;\n            var news = [];\n            this.state.feedItems.forEach(function(newsItem, index) {\n                news.push(React.createElement(Feed, {key: index, entry: newsItem.entry, datestring: newsItem.datestring}))\n            });\n            return (\n                React.createElement(\"div\", {className: \"cbfcfa7b8130f4321812c34d0a6a80f3b-coloredbox\"}, \n                    React.createElement(\"div\", {className: \"perfectscrollbar\"}, \n                        React.createElement(\"div\", {className: \"cbfcfa7b8130f4321812c34d0a6a80f3b-rss\"}, \n                            React.createElement(\"div\", {className: \"rss-wrapper\"}, \n                                React.createElement(\"div\", {className: \"cbfcfa7b8130f4321812c34d0a6a80f3b-rsstarget\"}, news)\n                            )\n                        )\n                    )\n                )\n            );\n        }\n    });\n    var Feed = React.createClass({displayName: 'Feed',\n        render: function() {\n            var link = this.props.entry.link;\n            var title = this.props.entry.title;\n            var datestring = this.props.datestring;\n            var contentSnippet = this.props.entry.contentSnippet;\n\n            return (\n                React.createElement(\"div\", null, \n                    React.createElement(\"a\", {className: \"link\", target: \"_blank\", href: link}, \" \", title, \" \"), \n                    React.createElement(\"span\", {className: \"date\"}, \" \", datestring, \" \"), \n                    React.createElement(\"p\", {className: \"cbfcfa7b8130f4321812c34d0a6a80f3b-contentSnippet\"}, \" \", contentSnippet, \" \")\n                )\n            );\n        }\n    });\n\n    return Main;\n})()\n",
+                        "5d5a8864ad444892acfaa172de4bae8c": "/** @jsx React.DOM */\n(function() {\n    var TimeDisplayText = React.createClass({displayName: 'TimeDisplayText',\n        render: function() {\n            var date = this.props.date;\n            var time = this.props.time;\n            var ampm = this.props.ampm;\n            var timeTextStyle = this.props.timeTextStyle;\n\n            return (\n                React.createElement(\"div\", {className: \"c5d5a8864ad444892acfaa172de4bae8c-display-text\"}, \n                    date, \n                    React.createElement(\"div\", {className: \"c5d5a8864ad444892acfaa172de4bae8c-time\", style: timeTextStyle}, time), \n                    ampm\n                )\n            );\n        }\n    });\n\n    var Main = React.createClass({displayName: 'Main',\n        mixins: [WidgetMixin],\n        getInitialState: function() {\n            var time = false;\n            return ({\n                time: time,\n            });\n        },\n        tick: function() {\n            var newTime = this.getTimeObj();\n            this.setState({\n                time: newTime\n            });\n        },\n        componentWillUnmount: function() {\n            clearInterval(this.interval);\n        },\n        componentDidMount: function() {\n            this.interval = setInterval(this.tick, 1000);\n        },\n        getTimeObj: function() {\n            var dateObj = new Date();\n\n            return {\n                'month': dateObj.getMonth(),\n                'date': dateObj.getDate(),\n                'day': dateObj.getDay(),\n                'hour': dateObj.getHours(),\n                'minutes': dateObj.getMinutes(),\n                'seconds': dateObj.getSeconds()\n            };\n        },\n        dayToString: function(day){\n            switch(day){\n                case 0:\n                    return \"Sun\";\n                case 1:\n                    return \"Mon\";\n                case 2:\n                    return \"Tues\";\n                case 3:\n                    return \"Wed\";\n                case 4:\n                    return \"Thurs\";\n                case 5:\n                    return \"Fri\";\n                case 6:\n                    return \"Sat\";\n            };\n        },\n        getCleanHours: function(hour) {\n            // If the user has not chosen 24 hour clock,\n            if (!this.data['isMilitaryClock']){\n                // modular math for 12-hour system\n                if (hour != 12){ // if it's not noon\n                    var hour = hour % 12;\n                }\n                if (hour == 0){ //if it's midnight \n                    hour = 12;\n                }\n            }\n            return hour;\n        },\n        getDateStr: function(time, isEuroFormat) {\n            var month = time.month + 1;\n            var dayStr = this.dayToString(time.day);\n            var date = dayStr + ' ' + month + '-' + time.date + ' ';\n            if (isEuroFormat) {\n                date = dayStr + ' ' + time.date + '-' + month + ' ';\n            }\n            return date;\n        },\n        getTimeString: function(time) {\n            var hours = this.getCleanHours(time.hour);\n            var minutes = time.minutes < 10 ? \"0\" + time.minutes : time.minutes;\n            if (!this.data['displaySeconds']) {\n                return hours + ':' + minutes;\n            }\n     \n            var seconds = time.seconds < 10 ? \"0\" + time.seconds : time.seconds;\n            var secondsStr = ':' + seconds;\n            return hours + ':' + minutes + secondsStr;\n        },\n        getAmPmStyles: function() {\n            var time = this.state.time;\n            var ampm = (time.hour > 11 ? 'pm' : 'am');\n            var size = 12 + (this.props.width * 1.6);\n            var amStyle = { \n                opacity: 0.5,\n                fontSize: size,\n                color: this.data['textColor'],\n                marginRight: 7,\n            };\n            var pmStyle = { \n                opacity: 0.5,\n                fontSize: size,\n                color: this.data['textColor'],\n            };\n            if (ampm == 'am') {\n                amStyle.opacity = 1;\n                pmStyle.opacity = 0.5;\n            }\n            else {\n                amStyle.opacity = 0.5;\n                pmStyle.opacity = 1;\n            }\n            return {\n                am: amStyle,\n                pm: pmStyle\n            }\n        },\n        getTimeFontOffsets: function() {\n            var base = 20;\n            var multiplier = 15;\n            if (this.data['displaySeconds']) {\n                base = 10;\n                multiplier = 13;\n            }\n            return {\n                base: base,\n                multiplier: multiplier\n            }\n        },\n        returnWidgetSettings: function() {\n            var settings = {\n                'textColor': {\n                    'default': '#FFF',\n                    'settings': {\n                      'display_text': 'Text color',\n                      'type': 'color'\n                    },\n                },\n                'color': {\n                    'default': '#000',\n                    'settings': {\n                      'display_text': 'Background Color',\n                      'type': 'color'\n                    },\n                },\n                'opacity': {\n                    'default': 45,\n                    'settings': {\n                      'display_text': 'Opacity',\n                      'type': 'slider',\n                      'slider_min': 0,\n                      'slider_max': 100,\n                      'slider_step': 1,\n                    },\n                },\n                'isMilitaryClock': {\n                    'default': false,\n                    'settings': {\n                      'display_text': '24-hour Clock',\n                      'type': 'boolean',\n                    },\n                },\n                'displaySeconds': {\n                    'default': false,\n                    'settings': {\n                        'display_text': 'Display Seconds',\n                        'type': 'boolean',\n                    },\n                },\n                'displayDate': {\n                    'default': true,\n                    'settings': {\n                        'display_text': 'Display Date',\n                        'type': 'boolean',\n                    },\n                },\n                'euroFormat': {\n                    'default': true,\n                    'settings': {\n                        'display_text': 'Date in dd/mm format',\n                        'type': 'boolean'\n                    }\n                },\n            };\n            return settings;\n        },\n        render: function() {\n            var boxStyle = {\n                backgroundColor: this.data['color'],\n                opacity: this.data['opacity'] / 100,\n            }\n\n            // If there isn't a time loaded yet, we'll return a\n            // barebones version of the clock.\n            var timeDisplayText;\n            if(this.state.time) {\n\n                var time = this.getTimeString(this.state.time);\n                var offsets = this.getTimeFontOffsets();\n                var base = offsets.base;\n                var multiplier = offsets.multiplier;\n                var timeFontSize = base + (this.props.width * multiplier);\n\n                var timeTextStyle = {\n                    color: this.data['textColor'],\n                    fontSize: timeFontSize\n                }\n\n                var ampm = [];\n                if (!this.data['isMilitaryClock']) {\n                    var styles = this.getAmPmStyles();\n                    ampm = (\n                        React.createElement(\"div\", {className: \"c5d5a8864ad444892acfaa172de4bae8c-ampm\"}, \n                            React.createElement(\"span\", {style: styles.am}, \"am\"), React.createElement(\"span\", {style: styles.pm}, \"pm\")\n                        )\n                    );\n                }\n                \n                var date = [];\n                if (this.data['displayDate']) {\n                    var dateStr = this.getDateStr(this.state.time, this.data['euroFormat']);\n                    var dateFontSize = 10 + (this.props.width * 1.6);\n                    var dateTextStyle = {\n                        color: this.data['textColor'],\n                        fontSize: dateFontSize\n                    }\n                    date = (\n                        React.createElement(\"div\", {className: \"c5d5a8864ad444892acfaa172de4bae8c-date\", style: dateTextStyle}, \n                            dateStr\n                        )\n                    );\n                }\n\n                timeDisplayText = (\n                    React.createElement(TimeDisplayText, {\n                        time: time, \n                        timeTextStyle: timeTextStyle, \n                        date: date, \n                        ampm: ampm})\n                );\n            }\n\n            return (\n                React.createElement(\"span\", null, \n                    React.createElement(\"div\", {className: \"c5d5a8864ad444892acfaa172de4bae8c-colored-box\", style: boxStyle}), \n                    React.createElement(\"div\", {className: \"c5d5a8864ad444892acfaa172de4bae8c-display-text-wrapper\"}, \n                        timeDisplayText\n                    )\n                )\n            );\n        }\n    });\n\n    return Main;\n\n})()\n",
+                        "ec1573d933484306aa20f0b8de882e1c": "/** @jsx React.DOM */\n(function() {\n    var Main = React.createClass({displayName: 'Main',\n        mixins: [WidgetMixin],\n        returnWidgetSettings: function() {\n            var activeCharities = [{\n                'name': 'Tab for a Cause',\n                'value': 'TabForACause'\n            }];\n            var charities = this.props.charities;\n            if (charities) {\n                charities.forEach(function(charity) {\n                    if(charity.has_active_twitter_handle) {\n                        activeCharities.push({\n                            'name': charity.name,\n                            'value': charity.twitter_handle,\n                        });\n                    }\n                });\n            }\n            var settings = {\n                'handle': {\n                    'default': 'TabForACause',\n                    'settings': {\n                        'display_text': 'Twitter handle',\n                        'type': 'input-radio',\n                        'options': activeCharities,\n                    },\n                }\n            };\n            return settings;\n        },\n        componentDidMount: function() {\n            $(\".perfectscrollbar\").perfectScrollbar({\n                    suppressScrollX: true,\n                    scrollYMarginOffset: 10,\n                });\n        },\n        render: function() {\n            var handle = this.data['handle'];\n            var listOwner = '';\n            var listSlug = '';\n            if(handle.indexOf(\"/\") > -1) {\n                var parts = handle.split(\"/\")\n                var listOwner = parts[0];\n                var listSlug = parts[1];\n            }\n            var link = 'https://twitter.com/' + handle;\n            var key = handle + listSlug;\n            \n            return (\n                React.createElement(\"div\", {className: \"cec1573d933484306aa20f0b8de882e1c-colored-box\"}, \n                    React.createElement(TwitterTimeline, {\n                        key: key, \n                        link: link, \n                        listOwner: listOwner, \n                        listSlug: listSlug, \n                        handle: handle})\n                )\n            );\n        }\n    });\n    var TwitterTimeline = React.createClass({displayName: 'TwitterTimeline',\n        componentDidMount: function() {\n            if (twttr.widgets) {\n                twttr.widgets.load();\n            }\n        },\n        componentDidUpdate: function() {\n            if (twttr.widgets) {\n                twttr.widgets.load();\n            }\n        },\n        render: function() {\n            return (\n                React.createElement(\"a\", {className: \"twitter-timeline\", \n                    href:  this.props.link, \n                    'data-widget-id': \"463938567677304833\", \n                    'data-chrome': \"noheader nofooter noscrollbar noborders\", \n                    'data-list-owner-screen-name':  this.props.listOwner, \n                    'data-list-slug':  this.props.listSlug, \n                    'data-screen-name':  this.props.handle\n                }\n                )\n            )\n        }\n    });\n    return Main;\n})()",
+                        "b5d10081079d4f0e85a46b25468c3cac": "/** @jsx React.DOM */\nReact.createClass({\n    mixins: [WidgetMixin],\n    setUpCalendar: function() {\n        // Build a new \n        var gColors = [\n            \"%23711616\", \"%2323164E\", \"%238C500B\", // red, purple orange\n            \"%23B1365F\", \"%232F6309\", \"%238D6F47\", \"%235229A3\", // pink, green, stone, indigo\n            \"%231B887A\", \"%23691426\", \"%23AB8B00\", \"%235C1158\", // turquoise, magenta, topaz, purple\n            \"%23853104\", \"%236B3304\", \"%2329527A\", \"%235B123B\"// red-orange, brown, dark blue, purplish=rgb(135,11,80)\n        ];\n\n        var additionalCalendars = this.data['calendars'];\n        var calendarInfos = [];\n        for (var i = 0; i < additionalCalendars.length; i++) {\n            var cal = additionalCalendars[i];\n            var calColor = gColors[i];\n            var calInfo = {\n                \"calendarId\": cal,\n                \"color\": calColor\n            }\n            calendarInfos.push(calInfo);\n        }\n        this.setData('calendarInfo', calendarInfos);\n    },\n    updateSource: function(name, dom){\n        var calSource = \"src=\"+ name + \"%40\" + dom + \"&amp;\"\n                    + \"color=%232952A3&amp;\";\n        this.setData('source', calSource);\n    },\n    getEmailUsername: function(email) {\n        return email.substring(0, email.indexOf(\"@\")); //get a substring of everything before the @\n    },\n    getEmailDomain: function(email) {\n        return email.substring(email.indexOf(\"@\")+1);// get a substring of everything after the @\n    },\n    isEmail: function(email) {\n        var regex = /^([a-zA-Z0-9_.+-])+\\@(([a-zA-Z0-9-])+\\.)+([a-zA-Z0-9]{2,4})+$/;\n        return regex.test(email);\n    },\n    submitEmail: function(){\n        email = this.state.email;\n        //save the email\n        if (this.isEmail(email)){\n            // update username and domain\n            var username = this.getEmailUsername(email);\n            var domain = this.getEmailDomain(email);\n\n            this.updateSource(username, domain);\n            this.setData('email', email);\n            this.setUpCalendar();\n\n        } else {\n            this.setState({warning: 'Please enter a valid email address'});\n        }\n        this.setState({email: ''});\n    },\n    handleInput: function(event) {\n        var email = event.target.value;\n        this.setState({email: email});\n    },\n    handleKeyPress: function(event) {\n        if (event.which == 13) {\n            this.submitEmail();\n        }\n    },\n    returnWidgetSettings: function() {\n        var settings = {\n            'caltype': {\n                'default': 'AGENDA',\n                'settings': {\n                  'display_text': 'Choose your default calendar view',\n                  'type': 'radio',\n                  'options': [\n                    {\n                        'name': 'Agenda',\n                        'value': 'AGENDA'\n                    },\n                    {\n                        'name': 'Week',\n                        'value': 'WEEK`'\n                    },\n                    {\n                        'name': 'Month',\n                        'value': 'MONTH'\n                    },\n                  ]\n                }\n            },\n            'email': {\n                'default': '',\n                'settings': {\n                    'display_text': 'Email Address',\n                    'type': 'input',\n                }\n            },\n            'calendars': {\n                'default': '',\n                'settings': {\n                    'display_text': 'Additional Calendars',\n                    'type': 'list',\n                }\n            }\n        }\n        return settings;\n    },\n    getInitialState: function() {\n        return {\n            warning: '',\n            email: this.data['email']\n        };\n    },\n    render: function() {\n        if (this.data['source'] && this.data['email']) {\n            var iframeStyle = {\n                borderWidth:0, \n                paddingBottom: 5,\n                boxSizing: 'border-box',\n                height: \"100%\",\n                width: \"100%\",\n                frameborder: \"0\"\n            }\n\n            var calendarInfo = this.data['calendarInfo'];\n            var calendarsAndColors = '';\n            if (calendarInfo) {\n                calendarInfo.forEach(function(calendar) {\n                    calendarsAndColors += 'src='\n                    calendarsAndColors += calendar.calendarId;\n                    calendarsAndColors += '&';\n                    calendarsAndColors += 'src='\n                    calendarsAndColors += calendar.color;\n                    calendarsAndColors += '&';\n                });\n            }\n\n            var source = 'https://www.google.com/calendar/embed?' + \n                this.data['source'] + '&' +\n                calendarsAndColors + '&' +\n                'mode=' + this.data['caltype'];\n\n            var content = (\n                React.createElement(\"div\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-iframecontainer\"}, \n                    React.createElement(\"iframe\", {\n                        className: \"cb5d10081079d4f0e85a46b25468c3cac-calendar\", \n                        src: source, \n                        style: iframeStyle})\n                )\n            );\n        } else {\n            var content = (\n                React.createElement(\"div\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-loginbox\"}, \n                    React.createElement(\"div\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-logintext\"}, \"Please enter the email address you use for your Google Calendar\"), \n                    React.createElement(\"input\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-editemail\", onKeyDown: this.handleKeyPress, onChange: this.handleInput, value: this.state.email, placeholder: \"Your Email\"}), \n                    React.createElement(\"button\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-submitbutton\", type: \"button\", onClick: this.submitEmail}, \"Submit\"), \n                    React.createElement(\"div\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-warning\"}, this.state.warning), \n                    React.createElement(\"br\", null)\n                )\n            );\n        }\n        return (\n            React.createElement(\"div\", {className: \"cb5d10081079d4f0e85a46b25468c3cac-calendarcontainer\"}, \n                content \n            )\n\n        );\n    }\n})\n",
+                        "7a11a8fbe5a84154b61a6ec8edc2a7b0": "/** @jsx React.DOM */\n(function() {\n    var Main = React.createClass({displayName: 'Main',\n        mixins: [WidgetMixin],\n        getInitialState: function() {\n            return {\n                url: '',\n                category: '',\n            };\n        },\n        componentDidMount: function() {\n            var images = this.props.charityPhotos;\n            if (images) {\n                var numImages = images.length;\n                var rand = Math.floor((Math.random()*images.length));\n                var imgUrl = images[rand]['image'];\n                var mediaUrl = this.props.mediaUrl;\n                var url = mediaUrl + imgUrl;\n                var category = images[rand]['category_id'];\n            } else {\n                var url = '';\n                var category = '';\n            }\n            this.setState({\n                url: url,\n                category: category\n            })\n        },\n        render: function() {\n            var categoryIcon = React.createElement(CategoryIcon, {category: this.state.category, categories: this.props.categories})\n            return (\n                React.createElement(\"div\", {className: \"c7a11a8fbe5a84154b61a6ec8edc2a7b0-coloredbox\"}, \n                    React.createElement(\"div\", {className: \"c7a11a8fbe5a84154b61a6ec8edc2a7b0-photo-container\"}, \n                        React.createElement(\"img\", {className: \"c7a11a8fbe5a84154b61a6ec8edc2a7b0-charity-photo\", src: this.state.url})\n                    ), \n                    categoryIcon\n                )\n            );\n        }\n    });\n    var CategoryIcon = React.createClass({displayName: 'CategoryIcon',\n        render: function() {\n            var category = this.props.category;\n            var categoryInfo = _.find(this.props.categories, {id: category});\n            var categoryIcon;\n            if (categoryInfo) {\n                var categoryName = categoryInfo.name;\n                var categoryColor = categoryInfo.color;\n                var categoryIcon = categoryInfo.icon;\n\n                // Cause category icon styling.\n                var categoryIconStyle = {\n                    background: categoryColor,\n                    position: 'absolute',\n                    top: 0,\n                    left: 0,\n                    borderBottomRightRadius: 8,\n                }\n                var iconStyle = {\n                    margin: 5,\n                    color: '#FFF',\n                    fontSize: 16,\n                };\n                var categoryIcon = categoryIcon;\n                var categoryIconClasses = 'ui cause-logo ' + categoryIcon + ' icon';\n\n                var categoryIcon = (\n                    React.createElement(\"div\", {className: \"c7a11a8fbe5a84154b61a6ec8edc2a7b0-logo\", style: categoryIconStyle}, \n                        React.createElement(\"i\", {style: iconStyle, className: categoryIconClasses})\n                    )\n                );\n            }\n            \n            return React.createElement(\"span\", null, categoryIcon);\n        }\n    });\n    return Main;\n})()\n",
+                        "761ed959da924ffeb84d17f951b4c3fc": "/** @jsx React.DOM */\nReact.createClass({\n    mixins: [WidgetMixin],\n    getInitialState: function() {\n        return {value: ''}\n    },\n    handleKeyPress: function(e) {\n        // For enter key press to search.\n        if (e.which == 13) {\n            this.search();\n        }\n    },\n    search: function() {\n        var googleUrl = 'https://www.google.com/';\n        var query = this.state.value;\n        var url = googleUrl + '#q=' + query;\n        this.props.redirect(url);\n    },\n    handleChange: function(event) {\n        this.setState({value: event.target.value});\n    },\n    render: function() {\n        var style = {\n            width: (this.props.width) * 90 - 23,\n            fontSize: (this.props.height) * 90 - 66,\n        };\n        return (\n            React.createElement(\"div\", {className: \"c761ed959da924ffeb84d17f951b4c3fc-outerbox\"}, \n                React.createElement(\"input\", {\n                    onChange: this.handleChange, \n                    value: this.state.value, \n                    onKeyDown: this.handleKeyPress, \n                    type: \"text\", \n                    name: \"q\", \n                    className: \"c761ed959da924ffeb84d17f951b4c3fc-g-search\", \n                    placeholder: \"Search...\", \n                    style: style})\n            )\n        );\n    }\n})\n",
+                        "d84447e23fee40b98982241513e3005b": "/** @jsx React.DOM */\n(function() {\n\n    // Extends components to give them a scrollbar.\n    var PerfectScrollbarMixin = {\n        componentDidMount: function() {\n            // Set up perfect scrollbar for this component.\n            var elem = this.getDOMNode();\n            $(elem).perfectScrollbar({\n                suppressScrollX: true,\n                scrollYMarginOffset: 5,\n            });\n        },\n        updatePerfectScrollbar: function() {\n            var elem = this.getDOMNode();\n            $(elem).perfectScrollbar('update');\n        },\n    }\n\n    var ContentEditable = React.createClass({displayName: 'ContentEditable',\n        shouldComponentUpdate: function(nextProps){\n            return nextProps.html !== this.getDOMNode().innerHTML;\n        },\n        emitChange: function(){\n            var html = this.getDOMNode().innerHTML;\n            if (this.props.onChange && html !== this.lastHtml) {\n\n                this.props.onChange({\n                    target: {\n                        value: html\n                    }\n                });\n            }\n            this.lastHtml = html;\n        },\n        render: function(){\n            var classes = this.props.className;\n            return (\n                React.createElement(\"div\", {\n                    className: classes, \n                    onInput: this.emitChange, \n                    onBlur: this.emitChange, \n                    contentEditable: true, \n                    dangerouslySetInnerHTML: {__html: this.props.html}}\n                )\n            );\n        },\n    });\n\n    var EditableContainer = React.createClass({displayName: 'EditableContainer',\n        mixins: [PerfectScrollbarMixin],\n        render: function(){\n            var textColor = this.props.textColor;\n            var html = this.props.html;\n            var handleTextInput = this.props.handleTextInput;\n            return (\n                React.createElement(\"div\", {className: \"cd84447e23fee40b98982241513e3005b-note-content-container\"}, \n                    React.createElement(ContentEditable, {\n                        className: \"cd84447e23fee40b98982241513e3005b-note-content\", \n                        textColor: textColor, \n                        html: html, \n                        onChange: handleTextInput})\n                )\n            );\n        },\n    });\n\n    var Main = React.createClass({displayName: 'Main',\n        mixins: [WidgetMixin],\n        returnWidgetSettings: function() {\n            var settings = {\n                'color': {\n                    'default': '#FAFAD2',\n                    'settings': {\n                      'display_text': 'Background color',\n                      'type': 'color'\n                    },\n                },\n                'textColor': {\n                    'default': 'black',\n                    'settings': {\n                      'display_text': 'Text color',\n                      'type': 'text-color-toggle'\n                    },\n                },\n            }\n            return settings;\n        },\n        componentDidMount: function() {\n            if (this.data['text']) {\n                this.noteContent = this.data['text'];\n            } else {\n                this.setData('text', 'My notes...')\n                this.noteContent = 'My notes...';\n            }\n        },\n        handleTextInput: function(event) {\n            this.noteContent = event.target.value;\n            this.forceUpdate();\n            this.saveNote();\n        },\n        saveNote: $.debounce(function() {\n            var note = this.noteContent;\n            this.setData('text', note);\n        }, 500),\n        render: function() {\n            var name = this.data['name'];\n            if (this.noteContent) {\n                var text = this.noteContent;\n            }\n            else {\n                var text = this.data['text'];\n            }\n\n            // Background styling.\n            var boxStyle = {\n                backgroundColor: this.data['color'],\n                color: this.data['textColor'],\n            }\n\n            var textColor = this.data['textColor'];\n\n            // Text styling.\n            var titleFontSize = 13;\n\n            return (\n                React.createElement(\"div\", {className: \"cd84447e23fee40b98982241513e3005b-colored-box\", style: boxStyle}, \n                    React.createElement(EditableContainer, {\n                        textColor: textColor, \n                        html: text, \n                        handleTextInput: this.handleTextInput})\n                )\n            );\n        }\n    });\n\n    return Main;\n})()"
+                    },
+                    "widget_css": {
+                        "26a72807b8124f34b17dcf03250b9fa4": "div.c26a72807b8124f34b17dcf03250b9fa4-colored-box {\n width: 100%;\n height: 100%;\n cursor: pointer;\n overflow: hidden;\n opacity: 0.9;\n}\n\n.c26a72807b8124f34b17dcf03250b9fa4-display-text-wrapper {\n height: 100%;\n /* to vertically align bookmark name */\n display: inline-flex;\n width: 100%;\n padding-left: 6px;\n padding-right: 6px;\n box-sizing: border-box;\n}\n\ndiv.c26a72807b8124f34b17dcf03250b9fa4-display-text {\n text-align: center;\n vertical-align: center;\n width: 100%;\n margin-left: 4%;\n margin-right: 5%;\n word-wrap: break-word;\n margin: auto 0px;\n}\n",
+                        "bfcfa7b8130f4321812c34d0a6a80f3b": "div.cbfcfa7b8130f4321812c34d0a6a80f3b-coloredbox {\n position: relative;\n width: 100%;\n height: 100%;\n background-color: white;\n overflow: hidden;\n cursor: move;\n}\ndiv.cbfcfa7b8130f4321812c34d0a6a80f3b-rss {\n width: 100%;\n height: 90%;\n cursor: auto;\n}\ndiv.cbfcfa7b8130f4321812c34d0a6a80f3b-rsstarget {\n overflow: hidden;\n}\n\n .widget-bfcfa7b8130f4321812c34d0a6a80f3b .perfectscrollbar {\n overflow: hidden;\n position: relative;\n width: 100%;\n height: 90%;\n padding: 10px 12px 0px 12px;\n box-sizing: border-box;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n }\n .widget-bfcfa7b8130f4321812c34d0a6a80f3b .rss-wrapper {}\n .widget-bfcfa7b8130f4321812c34d0a6a80f3b .date {\n display: block;\n color: #333333;\n }\n .widget-bfcfa7b8130f4321812c34d0a6a80f3b .link {\n color: #7154A2 !important;\n text-decoration: none;\n font-size: 18px;\n }\n .widget-bfcfa7b8130f4321812c34d0a6a80f3b .link:hover {\n text-decoration: underline;\n }\n",
+                        "5d5a8864ad444892acfaa172de4bae8c": ".c5d5a8864ad444892acfaa172de4bae8c-colored-box {\n width: 100%;\n height: 100%;\n cursor: pointer;\n overflow: hidden;\n position: absolute;\n top: 0px;\n left: 0px;\n /*z-index: 2;*/\n}\n\n.c5d5a8864ad444892acfaa172de4bae8c-display-text {\n height: 100%;\n width: 100%;\n display: inline-flex;\n position: absolute;\n box-sizing: border-box;\n text-align: center;\n font-family: \"Courier New\", Courier, monospace;\n /*z-index: 3;*/\n -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */\n -moz-animation: fadein 1s; /* Firefox < 16 */\n -ms-animation: fadein 1s; /* Internet Explorer */\n -o-animation: fadein 1s; /* Opera < 12.1 */\n animation: fadein 1s;\n}\n\n.c5d5a8864ad444892acfaa172de4bae8c-ampm{\n position: absolute;\n bottom: 5px;\n right: 10px;\n}\n\n.c5d5a8864ad444892acfaa172de4bae8c-date{\n font-size: 20px;\n position: absolute;\n left: 6px;\n line-height: 22px;\n text-align: left;\n}\n\n.c5d5a8864ad444892acfaa172de4bae8c-time{\n margin: auto 0px;\n vertical-align: center;\n text-align: center;\n width: 100%;\n}\n\n@keyframes fadein {\n from { opacity: 0; }\n to { opacity: 1; }\n}\n\n/* Firefox < 16 */\n@-moz-keyframes fadein {\n from { opacity: 0; }\n to { opacity: 1; }\n}\n\n/* Safari, Chrome and Opera > 12.1 */\n@-webkit-keyframes fadein {\n from { opacity: 0; }\n to { opacity: 1; }\n}\n\n/* Internet Explorer */\n@-ms-keyframes fadein {\n from { opacity: 0; }\n to { opacity: 1; }\n}\n\n/* Opera < 12.1 */\n@-o-keyframes fadein {\n from { opacity: 0; }\n to { opacity: 1; }\n}\n",
+                        "ec1573d933484306aa20f0b8de882e1c": "div.cec1573d933484306aa20f0b8de882e1c-colored-box {\n width: calc(100% - 14px);\n height: calc(100% - 20px);\n background-color: white;\n cursor: move;\n overflow: hidden;\n padding: 10px 7px 10px 7px;\n}\n\n .widget-ec1573d933484306aa20f0b8de882e1c .twitter-timeline {\n height: 100%;\n }\n",
+                        "b5d10081079d4f0e85a46b25468c3cac": "label{\n position: relative;\n top:-1px;\n}\na.cb5d10081079d4f0e85a46b25468c3cac-description{\n font-size: 10px;\n color: #7154A2!important;\n opacity: 0.7;\n}\n\na.cb5d10081079d4f0e85a46b25468c3cac-description:hover{\n opacity: 1;\n}\n\ndiv.cb5d10081079d4f0e85a46b25468c3cac-coloredbox {\n width: 100%;\n height: 100%;\n overflow: hidden;\n}\n\ndiv.cb5d10081079d4f0e85a46b25468c3cac-calendarcontainer{\n height: 100%;\n width: 100%;\n background-color: #E5ECF9;\n cursor: move;\n}\n\ndiv.cb5d10081079d4f0e85a46b25468c3cac-loginbox{\n display: block;\n position: relative;\n top: 2%;\n margin-left: auto;\n margin-right: auto;\n background-color: #F7F7F7;\n width: 95%;\n height: 95%;\n max-width: 300px;\n max-height: 400px;\n}\n\ndiv.cb5d10081079d4f0e85a46b25468c3cac-logintext {\n text-align: center;\n font-size: 18px;\n margin-left: 4%;\n margin-right: 5%;\n padding-top: 16%\n \n}\ninput.cb5d10081079d4f0e85a46b25468c3cac-editemail{\n direction: ltr;\n height: 29px;\n font-size: 16px;\n width: 75%;\n margin-left: 12%;\n margin-right: 13%;\n margin-top: 20px;\n text-align: center;\n}\nbutton.cb5d10081079d4f0e85a46b25468c3cac-submitbutton{\n width: 76%;\n display: block;\n margin: 10px 12% 10px 12%; /* top right bottom left */\n position: relative;\n border: 1px solid #2f5bb7;\n color: #fff;\n height: 34px;\n background-color: #357ae8;\n font-size: 16px;\n}\n.cb5d10081079d4f0e85a46b25468c3cac-warning{\n width: 88%;\n margin-left: auto;\n margin-right: auto;\n text-align: center;\n}\n.cb5d10081079d4f0e85a46b25468c3cac-iframecontainer{\n margin-left: 14px;\n padding-top: 18px;\n display: block;\n height: calc(100% - 20px);\n width: calc(100% - 20px);\n}\n.cb5d10081079d4f0e85a46b25468c3cac-reminder{\n width: 159px;\n margin: 0;\n position: absolute;\n right: 20px;\n top: 218px;\n color: #7154A2;\n visibility: hidden;\n}\n.cb5d10081079d4f0e85a46b25468c3cac-description{\n cursor: pointer;\n}",
+                        "7a11a8fbe5a84154b61a6ec8edc2a7b0": "div.c7a11a8fbe5a84154b61a6ec8edc2a7b0-coloredbox {\n position: relative;\n width: 100%;\n height: 100%;\n background-color: none;\n overflow: hidden;\n -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */\n -moz-box-sizing: border-box; /* Firefox, other Gecko */\n box-sizing: border-box;\n background: rgba(256, 256, 256, 0.1);\n}\n.c7a11a8fbe5a84154b61a6ec8edc2a7b0-photo-container {\n position: relative;\n width: 100%;\n height: 100%;\n}\n.c7a11a8fbe5a84154b61a6ec8edc2a7b0-charity-photo {\n max-width:100%;\n max-height:100%;\n margin: auto;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n border: 7px solid rgba(50,50,50, 0.7);\n border-radius: 5px;\n /* To center vertically and horizontally */\n position: absolute;\n top: 50%;\n left: 50%;\n transform: translate(-50%, -50%);\n}",
+                        "761ed959da924ffeb84d17f951b4c3fc": "input.c761ed959da924ffeb84d17f951b4c3fc-g-search{\n margin: 14px 2px 14px 2px;\n border: 1px solid #DBDBDB;\n padding: 5px;\n box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);\n border-radius: 3px;\n outline: 0;\n}",
+                        "d84447e23fee40b98982241513e3005b": "div.cd84447e23fee40b98982241513e3005b-colored-box {\n position: relative;\n width: 100%;\n height: 100%;\n padding: 12px 0px 8px 5px;\n -webkit-box-sizing: border-box;\n -moz-box-sizing: border-box;\n box-sizing: border-box;\n}\n.cd84447e23fee40b98982241513e3005b-note-content-container {\n overflow: hidden;\n position: relative;\n width: 100%;\n height: 95%;\n box-sizing: border-box;\n}\n.cd84447e23fee40b98982241513e3005b-note-content:focus{\n outline: 0;\n}\n.cd84447e23fee40b98982241513e3005b-note-content {\n overflow: hidden;\n resize: none;\n background-color: transparent;\n border: 0;\n font-size: 13px;\n padding-right: 12px;\n}\n.cd84447e23fee40b98982241513e3005b-white {\n color: #FFF;\n}\n.cd84447e23fee40b98982241513e3005b-black {\n color: #000;\n}"
+                    }
+                }
+            },
+            "WidgetDataStore": {
+                "sync_status": [],
+                "storeData": {
+                    "widgets": [{
+                        "y": 2,
+                        "resizable": "true",
+                        "settings": [{
+                            "display_text": "Name",
+                            "default": "Google",
+                            "type": "input",
+                            "name": "name"
+                        }, {
+                            "display_text": "URL",
+                            "default": "https://google.com",
+                            "type": "input",
+                            "name": "url"
+                        }, {
+                            "display_text": "Background color",
+                            "default": "#9C87BE",
+                            "type": "color",
+                            "name": "color"
+                        }, {
+                            "display_text": "Text color",
+                            "default": "#2B2B2B",
+                            "type": "color",
+                            "name": "textColor"
+                        }],
+                        "id": "8ab3ae69207e43cfa4ea3bc494a41397",
+                        "modified_at": 1427252525000,
+                        "height": 1,
+                        "width": 1,
+                        "permanent": false,
+                        "deletable": "true",
+                        "pane": 0,
+                        "movableBetweenPanes": "true",
+                        "x": 1,
+                        "data": {
+                            "url": "https://www.tumblr.com",
+                            "color": "#36465D",
+                            "textcolor": "#9D9B9B",
+                            "name": "Tumblr",
+                            "textColor": "#2B2B2B"
+                        },
+                        "widget_id": "26a72807b8124f34b17dcf03250b9fa4"
+                    }],
+                    "deleted_widgets": []
+                },
+                "success": true
+            },
+            "PublicDataStore": {
+                "storeData": {
+                    "referral_reward_amount": 500,
+                    "charity_info": {
+                        "charity_photos": [{
+                            "image": "img/0/80.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/35.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/94.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/87.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/50.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/8.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/85.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/62.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/4.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/70.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/77.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/72.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/30.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/99.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/12.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/0.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/10.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/101.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/27.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/88.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/90.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/7.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/52.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/102.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/98.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/28.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/53.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/83.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/54.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/29.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/61.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/100.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/78.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/81.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/14.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/24.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/37.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/60.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/33.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/17.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/59.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/92.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/39.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/66.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/96.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/42.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/49.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/64.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/22.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/68.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/3.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/19.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/15.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/32.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/82.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/44.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/48.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/46.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/38.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/67.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/16.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/23.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/71.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/73.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/86.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/26.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/57.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/21.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/36.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/51.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/95.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/93.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/58.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/76.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/25.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/89.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/5.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/74.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/56.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/9.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/45.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/34.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/18.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/13.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/6.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/40.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/2.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/91.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/79.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/43.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/63.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/84.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/20.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/41.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/1.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/75.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/47.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/31.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/65.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/11.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/55.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/69.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/0/97.jpg",
+                            "category_id": 5
+                        }, {
+                            "image": "img/1/35.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/50.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/8.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/4.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/30.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/12.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/0.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/10.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/27.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/7.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/52.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/28.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/53.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/54.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/29.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/61.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/14.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/24.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/37.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/60.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/33.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/17.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/59.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/39.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/42.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/49.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/22.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/3.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/19.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/15.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/32.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/44.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/48.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/46.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/38.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/16.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/23.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/26.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/57.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/21.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/36.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/51.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/58.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/25.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/5.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/56.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/9.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/45.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/34.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/18.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/13.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/6.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/40.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/2.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/43.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/20.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/41.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/1.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/47.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/31.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/11.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/1/55.jpg",
+                            "category_id": 1
+                        }, {
+                            "image": "img/2/80.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/35.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/50.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/8.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/62.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/4.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/70.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/77.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/72.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/30.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/12.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/0.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/10.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/27.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/7.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/52.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/28.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/53.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/54.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/29.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/61.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/78.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/14.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/24.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/37.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/60.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/33.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/17.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/59.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/39.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/66.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/42.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/49.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/64.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/22.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/68.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/3.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/19.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/15.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/32.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/44.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/48.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/46.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/38.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/67.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/16.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/23.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/71.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/73.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/26.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/57.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/21.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/36.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/51.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/58.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/76.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/25.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/5.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/74.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/56.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/9.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/45.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/34.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/18.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/13.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/6.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/40.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/2.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/79.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/43.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/63.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/20.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/41.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/1.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/75.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/47.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/31.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/65.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/11.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/55.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/2/69.jpg",
+                            "category_id": 2
+                        }, {
+                            "image": "img/3/80.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/35.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/94.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/87.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/50.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/8.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/135.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/85.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/115.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/62.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/123.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/138.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/4.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/70.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/77.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/122.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/118.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/72.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/30.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/99.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/107.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/12.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/0.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/126.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/137.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/106.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/10.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/101.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/27.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/88.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/90.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/124.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/7.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/52.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/129.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/102.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/98.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/108.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/28.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/110.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/116.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/53.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/83.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/54.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/29.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/61.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/100.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/109.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/78.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/81.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/14.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/24.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/37.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/60.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/33.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/17.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/59.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/92.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/39.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/66.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/130.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/96.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/42.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/49.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/64.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/103.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/111.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/22.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/68.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/3.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/19.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/15.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/120.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/32.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/82.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/44.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/128.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/125.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/48.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/46.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/38.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/127.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/67.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/16.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/23.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/117.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/133.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/71.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/73.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/121.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/86.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/26.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/57.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/21.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/139.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/36.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/51.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/104.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/136.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/95.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/134.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/93.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/58.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/76.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/25.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/89.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/132.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/131.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/113.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/5.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/74.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/56.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/9.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/45.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/34.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/18.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/13.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/6.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/112.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/40.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/2.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/91.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/79.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/43.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/63.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/84.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/20.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/140.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/41.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/1.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/75.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/105.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/31.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/65.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/114.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/11.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/55.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/69.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/97.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/4/1000 (43).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (19).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (30).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (33).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/8.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (4).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (39).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (37).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (20).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (24).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/4.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (28).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (44).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/12.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/0.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (2).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/10.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (36).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/7.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (9).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (40).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (17).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (34).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/14.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (38).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (41).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/17.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (12).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/22.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (35).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/3.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (31).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/19.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/15.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (32).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (5).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (27).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (1).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/16.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/23.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (23).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/21.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (6).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (10).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (14).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (3).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (25).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (18).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (29).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (11).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (21).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/5.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (7).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (42).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/9.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (16).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (26).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/18.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/13.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/6.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (13).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/2.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (22).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (8).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (15).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/20.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/1000 (45).jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/11.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/4/55.jpg",
+                            "category_id": 4
+                        }, {
+                            "image": "img/3/139_1.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/3/140.jpg",
+                            "category_id": 3
+                        }, {
+                            "image": "img/5/103.jpg",
+                            "category_id": 5
+                        }],
+                        "charities": [{
+                            "twitter_handle": "SavetheChildren",
+                            "name": "Save the Children",
+                            "has_active_rss_feed": true,
+                            "charity_id": 1,
+                            "rss_feed_url": "http://fulltextrssfeed.com/www.savethechildren.typepad.com/blog/rss.xml",
+                            "has_active_twitter_handle": true,
+                            "category_id": 2
+                        }, {
+                            "twitter_handle": "RoomtoRead",
+                            "name": "Room to Read",
+                            "has_active_rss_feed": true,
+                            "charity_id": 2,
+                            "rss_feed_url": "http://fulltextrssfeed.com/blog.roomtoread.org/room-to-read/atom.xml",
+                            "has_active_twitter_handle": true,
+                            "category_id": 1
+                        }, {
+                            "twitter_handle": "EducateOrg",
+                            "name": "Educate!",
+                            "has_active_rss_feed": false,
+                            "charity_id": 3,
+                            "rss_feed_url": "http://fulltextrssfeed.com/www.experienceeducate.org/blog/rss.xml",
+                            "has_active_twitter_handle": true,
+                            "category_id": 1
+                        }, {
+                            "twitter_handle": "hrw",
+                            "name": "Human Rights Watch",
+                            "has_active_rss_feed": true,
+                            "charity_id": 4,
+                            "rss_feed_url": "http://fulltextrssfeed.com/www.hrw.org/rss/news",
+                            "has_active_twitter_handle": true,
+                            "category_id": 4
+                        }, {
+                            "twitter_handle": "ConservationOrg",
+                            "name": "Conservation International",
+                            "has_active_rss_feed": true,
+                            "charity_id": 5,
+                            "rss_feed_url": "http://fulltextrssfeed.com/feeds.feedburner.com/ConservationInternationalBlog",
+                            "has_active_twitter_handle": true,
+                            "category_id": 3
+                        }, {
+                            "twitter_handle": "water",
+                            "name": "Water.org",
+                            "has_active_rss_feed": true,
+                            "charity_id": 7,
+                            "rss_feed_url": "http://fulltextrssfeed.com/www.water.org/content/headlines/feed/",
+                            "has_active_twitter_handle": true,
+                            "category_id": 5
+                        }, {
+                            "twitter_handle": "acfusa",
+                            "name": "Action Against Hunger",
+                            "has_active_rss_feed": true,
+                            "charity_id": 102,
+                            "rss_feed_url": "http://fulltextrssfeed.com/feeds.actionagainsthunger.org/acf-usa/news?format=xml",
+                            "has_active_twitter_handle": true,
+                            "category_id": 2
+                        }, {
+                            "twitter_handle": "TabForACause/ftdws",
+                            "name": "The Foundation to Decrease Worldsuck",
+                            "has_active_rss_feed": false,
+                            "charity_id": 104,
+                            "rss_feed_url": "http://pipes.yahoo.com/pipes/pipe.run?_id=418e92a20895fb3772cfa3c3cdf5d1d5&_render=rss",
+                            "has_active_twitter_handle": false,
+                            "category_id": 4
+                        }],
+                        "categories": {
+                            "Human Rights": {
+                                "color": "#cc080e",
+                                "id": 4,
+                                "charities": [{
+                                    "twitter_handle": "hrw",
+                                    "name": "Human Rights Watch",
+                                    "has_active_rss_feed": true,
+                                    "charity_id": 4,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/www.hrw.org/rss/news",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 4
+                                }, {
+                                    "twitter_handle": "TabForACause/ftdws",
+                                    "name": "The Foundation to Decrease Worldsuck",
+                                    "has_active_rss_feed": false,
+                                    "charity_id": 104,
+                                    "rss_feed_url": "http://pipes.yahoo.com/pipes/pipe.run?_id=418e92a20895fb3772cfa3c3cdf5d1d5&_render=rss",
+                                    "has_active_twitter_handle": false,
+                                    "category_id": 4
+                                }],
+                                "name": "Human Rights",
+                                "icon": "fire"
+                            },
+                            "Water": {
+                                "color": "#1F5184",
+                                "id": 5,
+                                "charities": [{
+                                    "twitter_handle": "water",
+                                    "name": "Water.org",
+                                    "has_active_rss_feed": true,
+                                    "charity_id": 7,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/www.water.org/content/headlines/feed/",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 5
+                                }],
+                                "name": "Water",
+                                "icon": "tint"
+                            },
+                            "Education": {
+                                "color": "#56330F",
+                                "id": 1,
+                                "charities": [{
+                                    "twitter_handle": "RoomtoRead",
+                                    "name": "Room to Read",
+                                    "has_active_rss_feed": true,
+                                    "charity_id": 2,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/blog.roomtoread.org/room-to-read/atom.xml",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 1
+                                }, {
+                                    "twitter_handle": "EducateOrg",
+                                    "name": "Educate!",
+                                    "has_active_rss_feed": false,
+                                    "charity_id": 3,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/www.experienceeducate.org/blog/rss.xml",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 1
+                                }],
+                                "name": "Education",
+                                "icon": "book"
+                            },
+                            "Health": {
+                                "color": "#EB7F13",
+                                "id": 2,
+                                "charities": [{
+                                    "twitter_handle": "SavetheChildren",
+                                    "name": "Save the Children",
+                                    "has_active_rss_feed": true,
+                                    "charity_id": 1,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/www.savethechildren.typepad.com/blog/rss.xml",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 2
+                                }, {
+                                    "twitter_handle": "acfusa",
+                                    "name": "Action Against Hunger",
+                                    "has_active_rss_feed": true,
+                                    "charity_id": 102,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/feeds.actionagainsthunger.org/acf-usa/news?format=xml",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 2
+                                }],
+                                "name": "Health",
+                                "icon": "medkit"
+                            },
+                            "The Environment": {
+                                "color": "#006905",
+                                "id": 3,
+                                "charities": [{
+                                    "twitter_handle": "ConservationOrg",
+                                    "name": "Conservation International",
+                                    "has_active_rss_feed": true,
+                                    "charity_id": 5,
+                                    "rss_feed_url": "http://fulltextrssfeed.com/feeds.feedburner.com/ConservationInternationalBlog",
+                                    "has_active_twitter_handle": true,
+                                    "category_id": 3
+                                }],
+                                "name": "The Environment",
+                                "icon": "leaf"
+                            }
+                        }
+                    },
+                    "theme_previews": [{
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/40ee72a673b441ffa9194e68fd9fa58c.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/829c9ea8c6a84916880e5e75704ec9e5.jpg",
+                        "uuid": "ab88299b-fe5b-48b8-a7bb-8a8a8c40d595",
+                        "name": "A German Afternoon"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/6a3bbaea08c545ee95a093cef5039c15.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/572bc1357ef94da3a3471f0c88ec70f8.jpg",
+                        "uuid": "91fc590d-4ced-40d2-85e0-0ff8fe4adfb4",
+                        "name": "Afternoon Tea"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/5dec0717e0974d05818b83c4ee505ceb.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/b25ef980b1f04f82956864a25d90f29c.jpg",
+                        "uuid": "0de294ff-31bb-45b5-8d3a-2d9f18ced3ef",
+                        "name": "Anchored"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/7de290f326834a0b97dae6f733d2a790.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/d1abd6f67097435b9078009919ae1912.jpg",
+                        "uuid": "989b6001-2155-48d3-8671-180d2cebd64d",
+                        "name": "Brick"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/db62741b2ae44868b6b6107788e07954.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/bfc49754ae6542f9b0b4e7303107df02.jpg",
+                        "uuid": "07bbce5f-e294-4d7f-8b3d-a5337ebef591",
+                        "name": "Calm before the Storm"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/8673a7900b6848f0af6f3198885ad5e6.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/0f673a8abfb247b1844955d67e9c33c6.jpg",
+                        "uuid": "a4c9ee8c-029b-4356-b897-a809d6d6f11d",
+                        "name": "Bay Lookout"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/59d43459edd84ac8be48de65c5c7e8b6.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/6898252c52c649698ed01a82577d108f.jpg",
+                        "uuid": "064ab592-e4c1-4e33-95cf-f917fd3da1e2",
+                        "name": "City that Never Sleeps"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/043b0224bf894354b92b6bb57e6331cf.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/c0a1a45712e0463492c90e5d6781b68b.jpg",
+                        "uuid": "a1d311b7-894d-477e-9cbd-cc09fd51e034",
+                        "name": "Cobblestones"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/94bbd29b17fe4fa3b45777281a392f21.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/5d4dfd0b34134879903f0480720bd746.jpg",
+                        "uuid": "9308b921-44c7-4b4e-845d-3b01fa73fa2b",
+                        "name": "Cup of Joe"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/be7120a6f9bf4a0babe64e8712e633a7.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/686bb9a5186d492d869a409fbec7b158.jpg",
+                        "uuid": "c332afe8-3e3a-44be-8bae-ff60f78878dc",
+                        "name": "Fallen"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/c66329b9d9344293888a0b2789dc547c.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/85b0d4034df549d4a6c73d9ddd6a65d3.jpg",
+                        "uuid": "651da7d8-1e99-41e0-bf07-2fafe26924a3",
+                        "name": "Footsteps"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/801c779a487c4aacb42855a396d30e19.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/b0c48b958c8b4e5b920cfa8eccf78a05.jpg",
+                        "uuid": "9c89e5a4-36ac-4dd2-8396-23ec8198f1f2",
+                        "name": "Gamer"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/bc2d5e09ab504fb6b98be3485418c525.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/983c01c1a8fd42fba2c84c969add1be3.jpg",
+                        "uuid": "01833d7a-fd09-4917-ab64-726227f675c7",
+                        "name": "Good Morning or Good Night"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/d734cfcda50e46c59f8107e8065f8191.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/0215c1f6d217454b96b7302f82498988.jpg",
+                        "uuid": "08ccf62c-cd73-498c-8390-13002ed1c4ee",
+                        "name": "Green Pastures"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/4808ab820cc841e999c9be6710e76d9e.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/7f55f86de7694a7f8630b8bc6a11faf0.jpg",
+                        "uuid": "a663e5ba-7cf9-42be-a3fd-5abee0d7192c",
+                        "name": "Hung out to Dry"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/661651039af4454abb852927b3a5b8f9.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/4c44e725d97e4a5fb4fb6e95ee7d05cb.jpg",
+                        "uuid": "49fcb132-9b6b-431b-bda8-50455e215be7",
+                        "name": "Into the Blue"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/b32b9e549b934a09b6599ab98b36b9ac.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/c57503e07bab4971b75e97f4231bdcf5.jpg",
+                        "uuid": "f4364f40-0c13-411c-87be-82b7f2be4922",
+                        "name": "Leafy Green"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/232a6803fb70419bbfb3c1697233bd45.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/5c3b8aeff8144bd28fb53c74baf06cd6.jpg",
+                        "uuid": "9a39ab06-18b8-4788-aabe-afb3f28c530f",
+                        "name": "Lilly"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/0b662872b165428bac16178006fe2920.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/9a7a6b37e2ec4754b79e69db01dafc3e.jpg",
+                        "uuid": "cb1522f2-3d2d-4fd2-b375-f518fb5f1718",
+                        "name": "Milky Light"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/989048e69f944e428d2bb17a8f1db9b1.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/d44efda3eafb4d64aa49604669f14951.jpg",
+                        "uuid": "3875055e-e139-4c06-be32-1a8ae704b672",
+                        "name": "Morning Tea"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/97dc72170fe04f3fa6028ab4cae1b39d.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/dd8083902bff402790eaf93920285ae0.jpg",
+                        "uuid": "5e88bc50-82d8-482f-a288-b425a741ebc1",
+                        "name": "Mountain Lake"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/42ef24b2e3214adead35638837e52982.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/7879761c8e794a3cb150822877257011.jpg",
+                        "uuid": "03710fff-152a-4340-a073-69b709facdf7",
+                        "name": "Night on the Town"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/053f309ddd0d448bbce71a0f30b56d1d.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/ae6ce9eb399b4798aebb2ad56c49abcc.jpg",
+                        "uuid": "261bab22-302c-4a94-8bdc-53245e9ed5c9",
+                        "name": "Puppy Eyes"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/d659d8e1127a4cfa81476fcbf87f70a7.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/47d00c04d677478cbc836624899163d0.jpg",
+                        "uuid": "1cc8d027-746e-4193-a2f9-dae9df23d885",
+                        "name": "Raspberry"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/eea6b34f93d64ddfb11ed36283e65693.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/11beff7a0d1440b39855e75519c240af.jpg",
+                        "uuid": "7d9b1606-0ca9-4180-8bd5-f784b564b1c4",
+                        "name": "Reflections"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/14abdae514fd46138be7fd35913c2cbb.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/93765021f32e48e5b89ee7d610582ac9.jpg",
+                        "uuid": "f9951aa0-6f61-4901-a908-59ac9ff5ee68",
+                        "name": "Restoration"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/e5e468c184e549ea967388b1d93f7e0b.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/7b2fe86bf5d940faaf3bd463fd745b02.jpg",
+                        "uuid": "e312e082-86ff-42a4-a8fa-daf865e506b4",
+                        "name": "Sands of Time"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/b910c7db0caa4e4b95f87f69f80820d4.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/e33516980b7f4710a24923d3e35caca0.jpg",
+                        "uuid": "6801cdbb-ef7d-492f-9fb1-13dd3c85e2b0",
+                        "name": "Veg Out"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/9af89d268eca44e1b9903c2ea1d90089.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/5df5a163ca774adf9856e2e20037016b.jpg",
+                        "uuid": "9d67a8e6-513a-4947-88ac-3b1faadf1b47",
+                        "name": "Stairway to Heaven"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/6a459d7ec1e1426cb4940c8ba73ea7e5.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/baf46b7b3ed74e258383e83f6bc5c6a6.jpg",
+                        "uuid": "49621abc-abdd-45eb-b89a-de8368fa2a61",
+                        "name": "Standing Guard"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/311e80fc2d594c7ebf7aaedfd274a3d9.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/4a7f4e11ae6247f6b5807ecaf37b7c8f.jpg",
+                        "uuid": "6405415d-b78d-456a-a0c4-31005f5f3b8d",
+                        "name": "Stargazer"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/2c786c3329ea4004a17fc582ceff2d5d.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/31f1308c2317425d9e6fe2bc60397375.jpg",
+                        "uuid": "acd3235f-b2c6-447f-8e24-05e96d265189",
+                        "name": "The Gateway"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/9be622f953394d4c9ea8a807cac85f05.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/191aa59729ac4a8f9a2a7d31b58bd427.jpg",
+                        "uuid": "4b5a5484-ffb1-4ae9-8c9d-32dc4e20535f",
+                        "name": "The Show"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/b5d93263f7e34afe80142e109466e564.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/476c1f1fdd0d4642a45d1fa645277944.jpg",
+                        "uuid": "672f730c-4708-4b97-8b34-a06cd116705c",
+                        "name": "Tranquility"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/6fa1e67b179d4c7bab6834dd91fd5d21.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/dc13dffa1f18411789fc74c7dfe6a42a.jpg",
+                        "uuid": "86ea7af0-4d7c-400a-97e8-27aa1cb4c801",
+                        "name": "Typewriter"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/e6632281d6cd472baec63bd7ae72ef6c.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/a0180894cbf54b5e96e046b6ae090ca2.jpg",
+                        "uuid": "302125d8-5bf8-4cd3-aa65-93ea39009dc5",
+                        "name": "Afternoon Nap"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/a745a2661b5a4fadab5fad965cacbc72.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/5d0301401c754f0982415125f999d5ef.jpg",
+                        "uuid": "2d30a43b-fc6a-47e1-92df-e6e9dd045b14",
+                        "name": "Colors of Autumn"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/1eb21779aec248d09f8154c659860a3c.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/6de111492f6e4084bf2b1ea0637d9660.jpg",
+                        "uuid": "f3c4fe3c-a5f1-472b-acbf-7adb971a8c6c",
+                        "name": "Frosted"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/aa3f4886064e45b386d7563f1ad777be.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/544d9c6ad67a45249cb86d5f7d72518d.jpg",
+                        "uuid": "e8fe161f-c727-441b-96ec-981c5529979a",
+                        "name": "Hands"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/693576025cef4eaf959af625b51e1c89.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/b28c4a4e549d435d9cf4340aaf9902fa.jpg",
+                        "uuid": "76f6b9ae-b1e3-4058-ae43-b7d5a5339a74",
+                        "name": "Insomnia"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/8e38b8377cd94df3ab15b2654d6c6161.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/c2b315c37e3d4dfda405c83b5ac66311.jpg",
+                        "uuid": "93d6fa85-ad53-44fa-8d6f-14be65677b41",
+                        "name": "Just a Peak"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/5d852e08f7dd40bfa01cb63ec0c9ebef.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/a60f9a97178e47ce8625fc3db2205e00.jpg",
+                        "uuid": "0c5d9b62-2871-4c65-a752-2d7b641e34ed",
+                        "name": "A Light at the End"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/9698b64a5fd3483bac1908cc85fcd04a.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/2217c9e24226492aad8ec05cd24992a9.jpg",
+                        "uuid": "c69bae6a-aad4-42e6-9226-8358883b6fda",
+                        "name": "Morning Mist"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/a32876b204db4537aed8fad88d12e632.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/1e70bb1b2c3f4dac847bbc4367a75590.jpg",
+                        "uuid": "e4472238-5302-4b4c-a97f-e8b01206ca56",
+                        "name": "On the Edge"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/51049ca410ea41c1ae381077abed680d.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/1363f4e2f284487eacd2daa0a9020da7.jpg",
+                        "uuid": "a1bbb75d-236c-4f04-9c6b-9d3b270e6769",
+                        "name": "Placid"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/b8c29c8a89b5483da5304baecaa41ebb.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/9d05812430944bd0ac88cd6c5bd4f87c.jpg",
+                        "uuid": "569c2951-cef7-4a7d-b3f4-851f588097f3",
+                        "name": "Winter is Coming"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/30145f37155d437390572e37e5646665.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/9f613d158be94b509e7b968461c1f734.jpg",
+                        "uuid": "27870591-a4d9-4ed5-a641-8dd394c01d42",
+                        "name": "Twilight"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/72dbe4818c944a36baf1aedf738f69c2.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/2770d1e04ee540cd83273d5fc619e2c0.jpg",
+                        "uuid": "0b938214-7a7f-445f-b120-4d1fe0d24fba",
+                        "name": "Under the Stars"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/a8197b5842bd4614ad7bb0d6148e1d74.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/65528be4f31a48c68b4046bf9ea017fd.jpg",
+                        "uuid": "c535bd2c-a3b2-4004-9d9e-94a53630f2e9",
+                        "name": "Yosemite"
+                    }, {
+                        "imageUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/bf67caf37ecf4058b3970e6d0624e715.jpg",
+                        "thumbnailUrl": "https://tabforacause-west.s3.amazonaws.com/media/img/themes/thumbs/57df984396624294b6ce3bceef6abdca.jpg",
+                        "uuid": "6107f3bc-2f13-49f5-9d49-cb5c5b646eb4",
+                        "name": "Grinnell"
+                    }],
+                    "donation_counter": {
+                        "timestamp": 1427557101222,
+                        "latest_donated_amount": 116501.4898598944,
+                        "seconds_per_penny": 3.125
+                    },
+                    "is_online": true,
+                    "media_url": "https://tabforacause-west.s3.amazonaws.com/media/"
+                }
+            }
+        };
+
+    }(window.newtab = window.newtab || {}));
+    </script>
+    <script type="text/javascript" src="https://tabforacause-west.s3.amazonaws.com/static-1/js/newtab3.64b757486da0.gz.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://tabforacause-west.s3.amazonaws.com/static-1/js/advertisement.3ec054140f24.gz.js" charset="utf-8"></script>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '776104659092565',
+            xfbml: true,
+            version: 'v2.2'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+    // For widget RSS feed.
+    google.load("feeds", "1");
+    </script>
+    <!-- Google Analytics -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-24159386-1', {
+        'userId': ''
+    });
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Quantcast Tag -->
+    <script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+    })();
+
+    _qevents.push({
+        qacct: "p-dRaenqeuG_7mW"
+    });
+    </script>
+    <noscript>
+        <div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-dRaenqeuG_7mW.gif" border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <!-- End Quantcast tag -->
+    <script src="//virool.at/js/widget.overlay.js" type="text/javascript"></script>
+    <script type='text/javascript' src='//virool.at/js/widget.messageapi.js'></script>
+</body>
+
+</html>

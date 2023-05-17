@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WTF???!?!?</title>
+		<meta charset="utf-8" />
+		<style type="text/css">body{margin:0}#bg{display:block}</style>
+		<script type="text/javascript" src="underscore.min.js"></script>
+		<script type="text/javascript" src="dat.gui.min.js"></script>
+		<script type="text/javascript">
+// Request Animation Frame Shim (courtesy of Erik Möller)
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelRequestAnimationFrame = window[vendors[x]+
+          'CancelRequestAnimationFrame'];
+    }
+
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
+var TAU = 2 * Math.PI;
+
+var WTF = function (opts) {
+	// opts = _.defaults({})
+	this.sliceCount = opts.sliceCount;
+	this._scale = opts.scale / 10;
+	this._logScale = Math.exp(opts.scale / 10);
+	this.outerRadius = opts.outerRadius;
+	this.innerRadius = opts.innerRadius;
+	this.phase = 0;
+	this.rotation = 0;
+	this.speed = opts.speed;
+	this.twists = opts.twists;
+	this.outerVerticies = opts.outerVerticies;
+	this.innerVerticies = opts.innerVerticies;
+	this.theta = 0;
+	this.ctx = opts.context;
+	this.offsetX = 0;
+	this.offsetY = 0;
+	this.t0 = Date.now();
+};
+
+WTF.prototype = {
+	get scale() {
+		return this._scale * 10;
+	},
+	set scale(val) {
+		this._scale = val / 10;
+		this._logScale = Math.exp(val / 10);
+	},
+	draw: function () {
+		var ctx = this.ctx;
+		var R = this.outerRadius,
+			r = this.innerRadius,
+			c = this.sliceCount,
+			s = this._logScale,
+			p = this.phase,
+			t = this.twists,
+			N = this.outerVerticies,
+			n = this.innerVerticies,
+			w = ctx.canvas.width,
+			h = ctx.canvas.height,
+			drawRadius;
+
+		ctx.fillStyle = "#eeeeee";
+		ctx.clearRect(0, 0, w, h);
+
+		ctx.save();
+		ctx.translate(w / 2, h / 2);
+		ctx.rotate(this.rotation + Math.PI / 2);
+		// ctx.translate(this.offsetX, this.offsetY);
+		ctx.strokeStyle = "#222222";
+
+		var da = TAU / c;
+
+		function drawPolygon(sides, x, y, radius, rotation, op) {
+			ctx.save();
+			var mask = op == "destination-in";
+			radius = mask ? radius + 10 : radius;
+			if (mask) ctx.fillStyle = "#ffffff";
+			ctx.globalCompositeOperation = op; //mask ? "destination-in" : "destination-over";
+			ctx.translate(x, y);
+			ctx.rotate(rotation);
+			ctx.beginPath();
+			ctx.moveTo(radius, 0);
+			var extAngle = TAU / sides;
+			for (var theta = 0; theta < TAU; theta+=extAngle) {
+				// var theta = i * extAngle;
+				ctx.lineTo(radius * Math.cos(theta), radius * Math.sin(theta));
+			}
+			ctx.closePath();
+			if (!mask) ctx.stroke();
+			ctx.fill();
+			ctx.restore();
+		}
+
+		function dist(n1, theta) {
+			// I DON'T EVEN
+			return Math.cos(Math.PI / n1) / Math.cos(theta - TAU / n1 * Math.floor((n1 * theta + Math.PI) / TAU));
+		}
+
+		// ctx.globalAlpha = 0.5;
+		ctx.fillStyle = "#ffffff";
+		ctx.lineWidth = 0.5;
+		R *= s;
+		r *= s;
+
+		for (var theta = TAU, end = TAU - da * 16; theta > end; ) {
+			// Circular
+			// drawPolygon(n, R * Math.cos(theta), R * Math.sin(theta), r, p - t/2 * theta, false);
+			// theta -= da;
+
+			// Polygonal
+			var nominalDist = dist(N, theta);
+			drawRadius = R * nominalDist;
+			drawPolygon(n, drawRadius * Math.cos(theta), drawRadius * Math.sin(theta), r, p - t/2 * theta, "source-over");
+			theta -= da / (nominalDist * nominalDist);
+		}
+
+		drawPolygon(n, R * dist(N, 0), 0, r, p, "destination-in");
+
+		for (var theta = 0; theta < TAU; ) {
+			// Circular
+			// drawPolygon(n, R * Math.cos(theta), R * Math.sin(theta), r, p - t/2 * theta, false);
+			// theta += da;
+
+			// Polygonal
+			var nominalDist = dist(N, theta);
+			drawRadius = R * nominalDist;
+			drawPolygon(n, drawRadius * Math.cos(theta), drawRadius * Math.sin(theta), r, p - t/2 * theta, "destination-over");
+			// This ensures roughly even spacing
+			theta += da / (nominalDist * nominalDist);
+		}
+
+		ctx.restore();
+		
+		return this;
+	},
+	loop: function () {
+		window.requestAnimationFrame(this.loop.bind(this));
+		var now = Date.now();
+		var dt = now - this.t0;
+		this.phase = (this.phase + this.speed/100) % TAU;
+		this.draw();
+	}
+};
+
+window.addEventListener('load', function () {
+	var canvas = document.getElementById('bg');
+	var ctx = canvas.getContext('2d');
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+
+	var p = new WTF({
+		sliceCount: 160,
+		scale: 0,
+		twists: 1,
+		speed: 1,
+		outerVerticies: 5,
+		innerVerticies: 4,
+		outerRadius: 200,
+		innerRadius: 60,
+		context: ctx
+	});
+	p.loop();
+	// p.draw();
+
+	var gui = new dat.GUI();
+	gui.add(p, 'sliceCount').min(3).max(200).step(1);
+	gui.add(p, 'speed').min(0).max(10).step(0.1).listen();
+	gui.add(p, 'twists').min(0).max(10).step(1);
+	gui.add(p, 'outerVerticies').min(3).max(20).step(1);
+	gui.add(p, 'innerVerticies').min(3).max(10).step(1);
+	gui.add(p, 'outerRadius').min(1).max(600).step(1);
+	gui.add(p, 'innerRadius').min(1).max(120).step(1);
+	gui.add(p, 'scale').min(-10).max(10).step(0.1);
+
+	window.addEventListener('resize', function () {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		p.draw();
+	}, false);
+
+	// canvas.addEventListener('mousedown', function () {
+	// 	canvas.width = window.innerWidth;
+	// 	canvas.height = window.innerHeight;
+	// 	p.draw();
+	// }, false);
+
+}, false);
+		</script>
+	</head>
+	<body>
+		<canvas id="bg"></canvas>
+	</body>
+</html>

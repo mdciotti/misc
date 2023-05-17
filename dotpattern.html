@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Circular Pattern</title>
+		<meta charset="utf-8" />
+		<style type="text/css">body{margin:0}#bg{display:block}</style>
+		<script type="text/javascript" src="underscore.min.js"></script>
+		<script type="text/javascript" src="dat.gui.min.js"></script>
+		<script type="text/javascript">
+// Request Animation Frame Shim (courtesy of Erik Möller)
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelRequestAnimationFrame = window[vendors[x]+
+          'CancelRequestAnimationFrame'];
+    }
+
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
+function parseHexColor(hexStr) {
+	var r, g, b;
+	r = parseInt(hexStr.substr(1, 2), 16);
+	g = parseInt(hexStr.substr(3, 2), 16);
+	b = parseInt(hexStr.substr(5, 2), 16);
+	return [r, g, b];
+}
+function toRGBstr(c) {
+	return "rgb(" + Math.floor(c[0]) + "," + Math.floor(c[1]) + "," + Math.floor(c[2]) + ")";
+}
+
+var Flower = function (opts) {
+	// opts = _.defaults({})
+	this.dots = opts.dots;
+	this._scale = opts.scale / 10;
+	this._logScale = Math.exp(opts.scale / 10);
+	this.offset = opts.offset;
+	this.limit = opts.limit;
+	this.grow = opts.grow;
+	this.spacing = opts.spacing;
+	this.ctx = opts.context;
+	this.themes = opts.themes;
+	this._theme = opts.theme;
+	this._oldTheme = opts.theme;
+	this.fgColor = opts.themes[opts.theme].fgColor;
+	this.bgColor = opts.themes[opts.theme].bgColor;
+	this.t0 = Date.now();
+	this.easeDuration = 500;
+	this.animator = null;
+	this.easing = function (t, d) {
+		return (t==d) ? 1 : 1 - Math.pow(2, -10 * t/d);
+	};
+	this.offsetX = 0;
+	this.offsetY = 0;
+};
+
+Flower.prototype = {
+	get scale() {
+		return this._scale * 10;
+	},
+	set scale(val) {
+		this._scale = val / 10;
+		this._logScale = Math.exp(val / 10);
+	},
+	get theme() {
+		return this._theme;
+	},
+	set theme(val) {
+		this._oldTheme = this._theme;
+		this._theme = val;
+		this.t0 = Date.now();
+		this.transition();
+	},
+	draw: function () {
+		var ctx = this.ctx;
+		var r, // radius
+			s = this._logScale,
+			n = this.dots,
+			o = this.offset,
+			l = this.limit,
+			fg = this.fgColor,
+			bg = this.bgColor,
+			w = ctx.canvas.width,
+			h = ctx.canvas.height;
+
+		ctx.fillStyle = bg;
+		ctx.fillRect(0, 0, w, h);
+
+		ctx.save();
+		ctx.translate(w / 2, h / 2);
+		ctx.translate(this.offsetX, this.offsetY);
+		ctx.fillStyle = fg;
+
+		r = this.spacing * s / Math.sin(Math.PI / n);
+
+		for (var c = 0; c < o + l; c++) {
+			if (c >= o) {
+				for (var i = 0; i < n; i++) {
+					var theta = c % 2 ? (i * 2 * Math.PI + Math.PI) / n : i * 2 * Math.PI / n;
+					ctx.beginPath();
+					ctx.arc(r * Math.cos(theta), r * Math.sin(theta), s, 0, 2 * Math.PI, false);
+					ctx.fill();
+				}
+			}
+			r += 2 * s;
+			s += Math.log(this.grow) * 4 * s / n;
+		}
+
+		ctx.restore();
+		
+		return this;
+	},
+	transition: function () {
+		this.animator = window.requestAnimationFrame(this.transition.bind(this));
+
+		var t = Date.now();
+		var dt = t - this.t0,
+
+			o = this.themes[this._oldTheme],
+			n = this.themes[this._theme],
+
+			oldBg = parseHexColor(o.bgColor),
+			oldFg = parseHexColor(o.fgColor),
+			newBg = parseHexColor(n.bgColor),
+			newFg = parseHexColor(n.fgColor),
+			curBg = [0,0,0],
+			curFg = [0,0,0],
+			p;
+
+		if (dt > this.easeDuration) {
+			window.cancelAnimationFrame(this.animator);
+			this.bgColor = n.bgColor;
+			this.fgColor = n.fgColor;
+			return;
+		}
+
+		p = this.easing(dt, this.easeDuration);
+
+		for (var c = 0; c < 3; c++) {
+			curBg[c] = oldBg[c] + p * (newBg[c] - oldBg[c]);
+			curFg[c] = oldFg[c] + p * (newFg[c] - oldFg[c]);
+		}
+
+		this.bgColor = toRGBstr(curBg);
+		this.fgColor = toRGBstr(curFg);
+
+		this.draw();
+	}
+};
+
+window.addEventListener('load', function () {
+	var canvas = document.getElementById('bg');
+	var ctx = canvas.getContext('2d');
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+
+	var themeList = {
+		"light": {
+			bgColor: "#e8e8e8",
+			fgColor: "#eeeeee"
+		},
+		"dark": {
+			bgColor: "#111111",
+			fgColor: "#181818"
+		},
+		"red": {
+			bgColor: "#cc3333",
+			fgColor: "#d83838"
+		},
+		"green": {
+			bgColor: "#33cc33",
+			fgColor: "#38d838"
+		},
+		"blue": {
+			bgColor: "#00aced",
+			fgColor: "#00aff8"
+		},
+		"yellow": {
+			bgColor: "#cccc33",
+			fgColor: "#d8d838"
+		},
+		"contrast": {
+			bgColor: "#eeeeee",
+			fgColor: "#222222"
+		}
+	};
+
+	// var p = new Flower(80, 0, 30, 30, 1, 1, ctx);
+	var p = new Flower({
+		dots: 160,
+		scale: 2,
+		offset: 5,
+		limit: 60,
+		spacing: 5,
+		grow: 5,
+		themes: themeList,
+		theme: "light",
+		context: ctx
+	});
+	p.draw();
+
+	var gui = new dat.GUI();
+	gui.add(p, 'theme', _.keys(themeList));
+	gui.add(p, 'dots').min(3).max(160).step(1).onChange(p.draw.bind(p));
+	gui.add(p, 'scale').min(-10).max(10).onChange(p.draw.bind(p));
+	gui.add(p, 'offset').min(0).max(60).step(1).onChange(p.draw.bind(p));
+	gui.add(p, 'limit').min(1).max(60).step(1).onChange(p.draw.bind(p));
+	gui.add(p, 'spacing').min(0).max(5).step(0.1).onChange(p.draw.bind(p));
+	gui.add(p, 'grow').min(0).max(5).step(0.1).onChange(p.draw.bind(p));
+
+	window.addEventListener('resize', function () {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		p.draw();
+	}, false);
+
+	// canvas.addEventListener('mousedown', function () {
+	// 	canvas.width = window.innerWidth;
+	// 	canvas.height = window.innerHeight;
+	// 	p.draw();
+	// }, false);
+
+}, false);
+		</script>
+	</head>
+	<body>
+		<canvas id="bg"></canvas>
+	</body>
+</html>

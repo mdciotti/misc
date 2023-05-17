@@ -1,0 +1,52 @@
+
+Determine the probability that a random chord of a circle of unit radius has a
+length greater than the square root of 3, the side of an inscribed equilateral
+triangle.
+
+
+theta1 = random() * TWO_PI
+theta2 = random() * TWO_PI
+p1.x = cos(theta1)
+p1.y = sin(theta1)
+p2.x = cos(theta2)
+p2.y = sin(theta2)
+
+// Distance formula
+sqrt(3) < sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
+// Substitution
+sqrt(3) < sqrt((cos(theta1) - cos(theta2)) ** 2 + (sin(theta1) - sin(theta2)) ** 2)
+// Distribution
+sqrt(3) < sqrt(cos2(theta1) - 2*cos(theta1)*cos(theta2) + cos2(theta2) + sin2(theta1) - 2*sin(theta1)*sin(theta2) + sin2(theta2))
+// Rearrange terms
+sqrt(3) < sqrt(sin2(theta1) + cos2(theta1) - 2*cos(theta1)*cos(theta2) + sin2(theta2) + cos2(theta2) - 2*sin(theta1)*sin(theta2))
+// sin2(x) + cos2(x) == 1
+sqrt(3) < sqrt(1 - 2*cos(theta1)*cos(theta2) + 1 - 2*sin(theta1)*sin(theta2))
+// Collect constant
+sqrt(3) < sqrt(2 - 2*cos(theta1)*cos(theta2) - 2*sin(theta1)*sin(theta2))
+// Factor out constant
+sqrt(3) < sqrt(2(1 - cos(theta1)*cos(theta2) - sin(theta1)*sin(theta2)))
+// Pull constant out of the square root
+sqrt(3) < sqrt(2) * sqrt(1 - cos(theta1)*cos(theta2) - sin(theta1)*sin(theta2))
+// cos(a + b) == cos(a)cos(b) - sin(a)sin(b)
+sqrt(3) < sqrt(2) * sqrt(1 - cos(theta1 + theta2))
+// Multiply by 2/2
+sqrt(3) < sqrt(2) * sqrt((1 - cos(theta1 + theta2)) * 2/2)
+// Pull denominator out of square root
+sqrt(3) < sqrt(2) * sqrt((1 - cos(theta1 + theta2)) / 2) * sqrt(2)
+// sqrt(2)sqrt(2) == 2
+sqrt(3) < 2 * sqrt((1 - cos(theta1 + theta2)) / 2)
+// sin2(x / 2) == (1 - cos(x)) / 2
+sqrt(3) < 2 * sqrt(sin2((theta1 + theta2) / 2))
+// sqrt(sin2(x)) = sin(x)
+sqrt(3) < 2 * sin((theta1 + theta2) / 2)
+// Divide both sides by 2
+sqrt(3) / 2 < sin((theta1 + theta2) / 2)
+// Take the inverse sine of both sides
+asin(sqrt(3) / 2) < (theta1 + theta2) / 2
+// Multiply both sides by two
+2 * asin(sqrt(3) / 2) < theta1 + theta2
+// asin(sqrt(3) / 2) == PI / 3
+2 * PI / 3 < theta1 + theta2
+
+if (dist > sqrt3) success += 1
+total += 1
